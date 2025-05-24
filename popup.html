@@ -2,22 +2,23 @@
 <html>
 <head>
   <title>Proxy Settings</title>
-  <style>
-    body {
-      width: 200px;
-      padding: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h3>Set Proxy</h3>
-  <label for="proxyHost">Proxy Host:</label>
-  <input type="text" id="proxyHost" placeholder="proxy.example.com"><br><br>
-  <label for="proxyPort">Port:</label>
-  <input type="number" id="proxyPort" placeholder="8080"><br><br>
-  <button id="applyProxyBtn">Apply Proxy</button>
-  <button id="applyLocal40000Btn">Apply Proxy localhost:40000</button>
-  <button id="turnOffBtn">Turn off</button>
-  <script src="popup.js"></script>
+  <div id = "incognito-warning">
+    <p>Proxy settings are not available in incognito mode.</p>
+  </div>
+  <div id="main">
+    <div id="proxy-status">Loading proxy status...</div>
+    <h3>Set Proxy</h3>
+    <label for="proxyHost">Proxy Host:</label>
+    <input type="text" id="proxyHost" placeholder="proxy.example.com">
+    <label for="proxyPort">Port:</label>
+    <input type="number" id="proxyPort" placeholder="8080">
+    <button id="applyProxyBtn">Apply Proxy</button>
+    <button id="applyLocal40000Btn">Apply Proxy localhost:40000</button>
+    <button id="turnOffBtn">Turn off</button>
+    <script src="popup.js"></script>
+  </div>
 </body>
 </html>
