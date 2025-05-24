@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Proxy Settings",
+  "version": "1.0",
+  "description": "Extension for quick changing firefox proxy settings.",
+  "permissions": [
+    "proxy",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "64": "icons/icon_64.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "64": "icons/icon_64.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "proxy-settings@egnaro.me"
+    }
+  }
+}
