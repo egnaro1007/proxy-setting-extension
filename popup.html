@@ -6,18 +6,42 @@
 </head>
 <body>
   <div id = "incognito-warning">
-    <p>Proxy settings are not available in incognito mode.</p>
+    <p>Proxy settings are not available when not allowed in incognito mode.</p>
   </div>
   <div id="main">
     <div id="proxy-status">Loading proxy status...</div>
     <h3>Set Proxy</h3>
-    <label for="proxyHost">Proxy Host:</label>
-    <input type="text" id="proxyHost" placeholder="proxy.example.com">
-    <label for="proxyPort">Port:</label>
-    <input type="number" id="proxyPort" placeholder="8080">
-    <button id="applyProxyBtn">Apply Proxy</button>
-    <button id="applyLocal40000Btn">Apply Proxy localhost:40000</button>
-    <button id="turnOffBtn">Turn off</button>
+
+    <div class="section">
+      <button id="applyLocal40000Btn">Apply Proxy localhost:40000</button>
+      <button id="moreSettingsBtn">More Settings</button>
+    </div>
+
+    <div id="moreSettingsGroup" style="display:none;" class="section">
+      <button id="autoDetectBtn">autoDetect</button>
+      <button id="systemBtn">system</button>
+      <button id="manualBtn">manual</button>
+      <button id="autoConfigBtn">autoConfig</button>
+    </div>
+
+    <div id="settingsGroup" class="section">
+      <!-- Manual settings (hidden by default) -->
+      <div id="manualSettings" style="display:none;">
+        <input type="text" id="proxyHost" placeholder="Proxy Host">
+        <input type="number" id="proxyPort" placeholder="Port">
+        <button id="manualApplyBtn">Apply</button>
+      </div>
+      <!-- AutoConfig settings (hidden by default) -->
+      <div id="autoConfigSettings" style="display:none;">
+        <input type="text" id="autoConfigUrl" placeholder="Enter PAC URL" />
+        <button id="autoConfigApplyBtn">Apply</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <button id="turnOffBtn" class="danger">Turn off</button>
+    </div>
+
     <script src="popup.js"></script>
   </div>
 </body>

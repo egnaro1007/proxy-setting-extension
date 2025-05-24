@@ -62,13 +62,33 @@ button {
   box-shadow: 0 1px 4px rgba(25, 118, 210, 0.10);
 }
 button:last-of-type {
-  background: #e53935;
   margin-bottom: 0;
+}
+button.danger{
+  background: #e53935;
 }
 button:hover {
   filter: brightness(1.10);
   box-shadow: 0 2px 8px rgba(66, 165, 245, 0.10);
 }
-button:last-of-type:hover {
+button.danger:hover {
   background: #b71c1c;
+}
+.section {
+  margin-top: 15px;
+}
+
+.input-error {
+  outline: 2px solid red;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+.shake {
+  animation: shake 0.3s;
 }
