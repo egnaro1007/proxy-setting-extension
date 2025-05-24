@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Proxy Settings</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -10,7 +9,7 @@
   </div>
   <div id="main">
     <div id="proxy-status">Loading proxy status...</div>
-    <h3>Set Proxy</h3>
+    <h3 id = "header">Set Proxy</h3>
 
     <div class="section">
       <button id="applyLocal40000Btn">Apply Proxy localhost:40000</button>
@@ -42,6 +41,7 @@
       <button id="turnOffBtn" class="danger">Turn off</button>
     </div>
 
+    <script src="locale.js"></script>
     <script src="popup.js"></script>
   </div>
 </body>

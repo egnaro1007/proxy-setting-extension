@@ -1,0 +1,56 @@
+{
+    "incognitoWarning": {
+        "message": "Proxy Settings are not available when not allowed in incognito mode."
+    },
+    "proxyStatusLoading": {
+        "message": "Loading proxy status..."
+    },
+    "proxyNotConnectedStatus": {
+        "message": "Proxy not connected"
+    },
+    "proxyConnectedStatus": {
+        "message": "Proxy connected"
+    },
+    "proxyAutoDetect": {
+        "message": "Auto-detect proxy settings"
+    },
+    "proxySystem": {
+        "message": "System proxy settings"
+    },
+    "header": {
+        "message": "Proxy Settings"
+    },
+    "applyLocal40000": {
+        "message": "Apply proxy localhost:40000"
+    },
+    "moreSettings": {
+        "message": "More Settings"
+    },
+    "autoDetect": {
+        "message": "Auto Detect"
+    },
+    "system": {
+        "message": "System"
+    },
+    "manual": {
+        "message": "Manual"
+    },
+    "autoConfig": {
+        "message": "Auto Config"
+    },
+    "apply": {
+        "message": "Apply"
+    },
+    "turnOff": {
+        "message": "Turn off"
+    },
+    "proxyHost": {
+        "message": "Proxy Host"
+    },
+    "proxyPort": {
+        "message": "Port"
+    },
+    "autoConfigUrl": {
+        "message": "Enter PAC URL"
+    }
+}

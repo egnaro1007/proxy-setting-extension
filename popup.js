@@ -18,21 +18,22 @@ function updateProxyStatus() {
         if (!statusDiv) return;
 
         const status = response.status;
+        const connectedString = browser.i18n.getMessage('proxyConnectedStatus');
         switch (status && status.proxyType) {
             case 'none':
-                statusDiv.innerHTML = `Proxy not connected`;
+                statusDiv.innerHTML = browser.i18n.getMessage('proxyNotConnectedStatus');
                 statusDiv.style.color = "red";
                 break;
             case 'autoDetect':
-                statusDiv.innerHTML = `Proxy connected<br><b>Auto-detect proxy settings</b>`;
+                statusDiv.innerHTML = `${connectedString}<br><b>${browser.i18n.getMessage('proxyAutoDetect')}</b>`;
                 statusDiv.style.color = "green";
                 break;
             case 'system':
-                statusDiv.innerHTML = `Proxy connected<br><b>System proxy settings</b>`;
+                statusDiv.innerHTML = `${connectedString}<br><b>${browser.i18n.getMessage('proxySystem')}</b>`;
                 statusDiv.style.color = "green";
                 break;
             case 'manual':
-                statusDiv.innerHTML = `Proxy connected<br><b>${status.ssl || status.http || status.socks || ''}</b>`;
+                statusDiv.innerHTML = `${connectedString}<br><b>${status.ssl || status.http || status.socks || ''}</b>`;
                 statusDiv.style.color = "green";
                 break;
             default:

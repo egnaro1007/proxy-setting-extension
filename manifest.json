@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Proxy Settings",
   "version": "1.0",
-  "description": "Extension for quick changing firefox proxy settings.",
+  "description": "__MSG_extensionDescription__",
   "permissions": [
     "proxy",
     "storage"
@@ -28,5 +28,6 @@
     "gecko": {
       "id": "proxy-settings@egnaro.me"
     }
-  }
+  },
+  "default_locale": "en"
 }

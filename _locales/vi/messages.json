@@ -1,0 +1,56 @@
+{
+    "incognitoWarning": {
+        "message": "Proxy Settings không khả dụng khi chưa được cho phép ở chế độ ẩn danh."
+    },
+    "proxyStatusLoading": {
+        "message": "Đang tải trạng thái proxy..."
+    },
+    "proxyNotConnectedStatus": {
+        "message": "Proxy chưa được kết nối"
+    },
+    "proxyConnectedStatus": {
+        "message": "Proxy đã kết nối"
+    },
+    "proxyAutoDetect": {
+        "message": "Tự động phát hiện cài đặt proxy"
+    },
+    "proxySystem": {
+        "message": "Sử dụng cài đặt proxy hệ thống"
+    },
+    "header": {
+        "message": "Thiết lập Proxy"
+    },
+    "applyLocal40000": {
+        "message": "Áp dụng proxy localhost:40000"
+    },
+    "moreSettings": {
+        "message": "Thêm cài đặt"
+    },
+    "autoDetect": {
+        "message": "Tự động phát hiện"
+    },
+    "system": {
+        "message": "Hệ thống"
+    },
+    "manual": {
+        "message": "Thủ công"
+    },
+    "autoConfig": {
+        "message": "Tự động cấu hình"
+    },
+    "apply": {
+        "message": "Áp dụng"
+    },
+    "turnOff": {
+        "message": "Tắt"
+    },
+    "proxyHost": {
+        "message": "Máy chủ Proxy"
+    },
+    "proxyPort": {
+        "message": "Cổng"
+    },
+    "autoConfigUrl": {
+        "message": "Nhập URL PAC"
+    }
+}
