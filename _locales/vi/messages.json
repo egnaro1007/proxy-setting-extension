@@ -1,4 +1,7 @@
 {
+    "extensionDescription": {
+        "message": "Thiết lập nhanh proxy."
+    },
     "incognitoWarning": {
         "message": "Proxy Settings không khả dụng khi chưa được cho phép ở chế độ ẩn danh."
     },

@@ -1,4 +1,7 @@
 {
+    "extensionDescription": {
+        "message": "Quick setup proxy."
+    },
     "incognitoWarning": {
         "message": "Proxy Settings are not available when not allowed in incognito mode."
     },
